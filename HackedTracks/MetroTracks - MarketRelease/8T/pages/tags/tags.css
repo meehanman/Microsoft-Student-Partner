@@ -1,0 +1,81 @@
+﻿.homepage section[role=main] {
+    margin-left: 272px;
+}
+body{
+	background-color:#122c4b;
+}
+#mainNav{
+	width:14.12%;
+	float:left;
+	height:100%;
+	left: 84px;
+	top: 132px;
+}
+.navItem{width:80%;margin-bottom:10px;}
+#userInfo{
+	float:right;
+	position:absolute;
+	margin-right:0px;
+	margin-left:auto;
+}
+/*Mix Tile Properties before mouseover*/
+.Mixfeed{
+	background-color:#122c4b;
+	height: 250px;
+}
+.MixFeedInfo{
+	position:fixed;
+	z-index:-1;
+}
+.userimg{height:45px;width:45px;}
+.username{position:fixed;}
+.Tracktileimg{
+	width:200px;
+	height:200px;
+}
+h3{ 
+	position:absolute;
+	right: 2.75px; 
+	left: 2px; 
+	bottom: 44.07px; 
+	top: 201.93px;
+}
+/*Mix Tile Properties after mouseover*/
+.Mixfeed:hover .Tracktileimg{
+
+	z-index:-2;
+}
+.Mixfeed:hover .MixFeedInfo{
+	visibility:visible;
+}
+.Mixfeed:hover{ 
+	visibility:visible;
+}
+.Tracktileimg{
+	width:200px;
+	height:200px;
+}
+h3{ 
+	position:absolute;
+	right: 3.75px; 
+	left: 47px; 
+	bottom: 30.07px; 
+	top: 199.93px;
+}
+
+
+
+
+
+
+@media screen and (-ms-view-state: snapped) {
+    .homepage section[role=main] {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: portrait) {
+    .homepage section[role=main] {
+        margin-left: 100px;
+    }
+}

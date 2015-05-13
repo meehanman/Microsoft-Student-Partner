@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>homePage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/pages/home/home.js"></script>
+	<script type="text/javascript">WinJS.UI.processAll();</script>
+</head>
+<body link="white">
+	
+	<div id="Top40itemTemplate" data-win-control="WinJS.Binding.Template">
+		<div id="entry" class="EntryClass" style="color-interpolation-filters: auto;">
+			<div class="no" data-win-bind="textContent:position">99</div>
+
+				<div class="ContentHolder" style="-ms-grid-column-span: 1; left: 5px; top: 0px; width: 155px; -ms-grid-column: 2; -ms-grid-row-span: 1; height: 25px;" >
+				<h2 id="artist1" style="float:left; -ms-grid-column: 2; overflow:auto; width: 225px; height: 41px;" data-win-bind="textContent:artist"></h2>
+				<div id="song" style="float:left; margin-top:0px;" data-win-bind="textContent:title">title</div>
+				<img style="visibility:hidden; position: relative; width: 50px; height: 50px; left: 0px; top: 0px;" data-win-bind="src:youtubelogo"></a>
+				</div>
+
+			<img id="img" data-win-bind="src:singleimgurl">
+			<div style="cursor:cell; color:white; margin: 95px 210px 0px 0px; -ms-grid-column-span: 1; -ms-grid-row-span: 1; -ms-grid-row: 1; -ms-grid-column: 2;"><a data-win-bind="href:youtubelink">
+				<img style="position: relative; width: 50px; height: 50px; left: 0px; top: 0px;" data-win-bind="src:youtubelogo"></a>
+			</div>
+				
+		</div>
+	</div>
+    
+
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Rock Top 40</span>
+            
+        	<div id="myAd" style="position:relative; float:right; width: 728px; height: 90px; z-index: -1; margin-right:20px; -ms-grid-column-span: 1; -ms-grid-column: 2;" 
+        data-win-control="MicrosoftNSJS.Advertising.AdControl" 
+     data-win-options="{applicationId: '167d918d-9b52-4b28-9400-a0260fe66fb8', adUnitId: '114582'}">
+</div></h1>
+        </header>
+        <section aria-label="Main content" role="main">
+			<div id="msg">Did you know? You can click on any top40 to share them with friends? Click to Share!</div>
+        	<div id="gridlistcontent1" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:select('#Top40itemTemplate'), layout:{type:WinJS.UI.GridLayout}, selectionMode:'single', swipeBehavior:'none', tapBehavior:'none'}"></div>
+	    </section>
+    </div>
+</body>
+</html>

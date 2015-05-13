@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="65456roozo.425163B397943" Version="1.0.4.0" Publisher="CN=C92EC9F5-75BA-4F99-BD8B-9E56643E62B9" />
+  <Properties>
+    <DisplayName>TopTips</DisplayName>
+    <PublisherDisplayName>roozo</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="HackTracks" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="MetroTracks gives you free access to millions of songs organized into mixes by listeners like you. Start listening to great music right away or create an account to track your favorite mixes, songs, and DJs. Stop letting marketing dweebs and computer algorithms pick your music and hear what real people from around the world are listening to. Powered by 8tracks." ForegroundText="light" BackgroundColor="#04aeda">
+        <DefaultTile ShowName="allLogos" ShortName="HackTracks" WideLogo="images\widelogo.png" />
+        <SplashScreen Image="images\splashscreen.png" BackgroundColor="#04aeda" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+          <Rotation Preference="landscapeFlipped" />
+        </InitialRotationPreference>
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" StartPage="default.html">
+          <BackgroundTasks>
+            <Task Type="audio" />
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.search" StartPage="pages/home/home.html" />
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

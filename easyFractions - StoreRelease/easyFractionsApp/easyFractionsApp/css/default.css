@@ -1,0 +1,176 @@
+﻿
+
+
+body {
+    height: 100%;
+    width: 100%;
+	background-color:#f38000;
+}
+#rec1{height:20px; background-color:white; width: 305px;}
+#toptext{font-size:25px;}
+#intro{
+	height:50%;
+}
+.fra{
+	height:107.91px;
+	font-size:80px;
+}
+#on1{
+	float:left;
+	width:30%;
+	height:100%
+}
+#tw2{float:left;
+	width:30%;}
+#th3{float:left;
+	width:30%;}
+.hold{
+	text-align:right;
+	font-size:30px;
+	}
+section{
+	overflow-y:auto;
+	overflow-x:hidden;
+	padding-right:20px;
+	}
+#Top{
+	width:100%;
+	background-color:#F79629;
+	height:40px;
+	opacity:0;
+	}
+#bottom{
+	background-color:#DD7400;
+	height:40px;
+	opacity:0;
+}
+.box{
+	background-color:gold;
+	height:20px;
+	width:20px;
+	float:left;
+	border-color:black;
+	border:dotted;
+	}	
+.homepage section[role=main] {
+    margin-left: 120px;
+	margin-right: 90px;
+}
+.fragment {
+    /* Define a grid with rows for a banner and a body */
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 128px 1fr;
+    display: -ms-grid;
+    height: 100%;
+    width: 100%;
+}
+
+    .fragment header[role=banner] {
+        /* Define a grid with columns for the back button and page title. */
+        -ms-grid-columns: 120px 1fr;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+    }
+
+        .fragment header[role=banner] .win-backbutton {
+            margin-left: 39px;
+            margin-top: 59px;
+        }
+
+        .fragment header[role=banner] .titlearea {
+            -ms-grid-column: 2;
+            margin-top: 37px;
+        }
+
+            .fragment header[role=banner] .titlearea .pagetitle {
+                width: calc(100% - 20px);
+            }
+
+    .fragment section[role=main] {
+        -ms-grid-row: 2;
+        height: 100%;
+        width: 84.92%;
+    }
+
+	
+	
+	
+	.pieContainer {
+          height: 252.91px;
+		  visibility:hidden;
+     }
+     .pieBackground {
+          background-color: #dd7400;
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          border-radius: 50px;
+          box-shadow: -1px 1px 3px #000;
+     } 
+		.pie {
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          border-radius: 50px;
+          clip: rect(0px, 50px, 100px, 0px);
+     }
+     .ahold {
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          border-radius: 50px;
+          clip: rect(0px, 100px, 100px, 50px);
+     }
+     #piechart001	
+	{
+	background-color: white;
+	transform:rotate(0deg);
+	}
+	#simplefraction{
+		height:100px; 
+		float:right; 
+		width: 225px;
+		font-size:20px;
+		}
+	 
+	 
+	 
+@media screen and (-ms-view-state: snapped) {
+    .fragment header[role=banner] {
+        -ms-grid-columns: auto 1fr;
+        margin-left: 20px;
+    }
+	
+	section[role=main] {visibility:hidden;}
+	#th3{visibility:hidden;}
+	.pieContainer {
+          height: 252.91px;
+		  visibility:hidden;
+     }
+	
+        .fragment header[role=banner] .win-backbutton {
+            margin: 0;
+            margin-right: 10px;
+            margin-top: 45%;
+        }
+
+            .fragment header[role=banner] .win-backbutton:disabled {
+                display: none;
+            }
+
+        .fragment header[role=banner] .titlearea {
+            -ms-grid-column: 2;
+            margin-left: 0;
+            margin-top: 68px;
+        }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .fragment header[role=banner] {
+        -ms-grid-columns: 100px 1fr;
+    }
+	section[role=main] {visibility:hidden;}
+        .fragment header[role=banner] .win-backbutton {
+            margin-left: 29px;
+        }
+}

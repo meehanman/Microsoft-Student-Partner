@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Windows 8 Tracks</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/home/home.css" rel="stylesheet" />
+
+    <script src="/pages/home/home.js"></script>
+	<link href="../../css/Microsoft.VisualStudio.Blend.Html.Intrinsic.Grid.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript">WinJS.UI.processAll();</script>
+</head>
+<body>
+	<div id="minimix" data-win-control="WinJS.Binding.Template">
+		<div>
+			<img class="cover" data-win-bind="src:cover_urls.max200; title:description" style="left: 0px; top: 0px; height: 84.5px; width: 93.5px; border-width: 4px; border-color: white;">
+		</div>
+	</div>
+	<div id="#minimixes" data-win-control="WinJS.Binding.Template">
+		<div>
+			<div data-win-bind="textContent:this"></div>
+		</div>
+	</div>
+	<div id="snaplogo" style="position:relative; width: 91.88%; height: 17.4%; z-index:800; left: 14px; top: 9px; background-image: url('/images/logobig.png'); background-size: contain; float:left; background-repeat: no-repeat; background-position-x: center; margin-top: 10%; margin-left: 1px;"></div>
+	<div id="snapedview">
+		<div id="imgNowPlaying1" style="position:relative; background-size:cover;background-position:center;height:191px;width:269px;box-shadow: inset 0 0 300px #000000; float:left; color:white; left: 26px; top: 0px;">
+	<div style="height: 78.5px; position:relative; left: -13.73px; top: 190.77px;margin:15px; width: 273.5px;">
+		<div id="artistnow" style="height: 36.5px; position:relative; font-size:23px; left: 0px; top: 0px;">
+			<h1>
+				<b>
+					<div id="snapartistnowplaying" style="font-size:16pt; text-overflow: inherit; word-wrap: normal;"></div>
+				</b>
+			</h1>
+		</div>
+		<div style="height: 50px;">
+			<h3>
+				<div id="snapsongnowplaying" style="font-size:14pt;"></div>
+			</h3>
+		</div>
+	</div>
+	<div style="height: 75.5px; position:relative; left: -13.73px; top: 172.77px;margin:15px; width: 268.5px;">
+		<button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'play', id:'snapplaypause', label:'Play', onclick:null, section:'global', type:'button'}" style="width: 60px; height: 67.66px;"></button>
+		<button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'next', id:'snapskip', label:'Skip Song', onclick:null, section:'global', type:'button'}"></button>
+		<button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'redo', id:'snapmix', label:'Next Mix', onclick:null, section:'global', type:'button'}"></button>
+	</div>
+
+</div>
+	</div>
+
+	<div id="TagData" style="background-color:wheat;" data-win-control="WinJS.Binding.Template">
+		<div>
+			<div style="background-color: #0A0C10; text-align:center;">
+			<div data-win-bind="textContent:name" style="box-shadow: inset 0 0 7px #1E3C70; border-radius:5px; width: 136px; height: 26px; background-color: #162E58;"></div>
+			</div>
+		</div>
+	</div>
+	<div id="imgbg"><img src="" id="preloadimg" style="opacity:0; width: 0px; height: 0px;"/></div><div id="imgcolor"></div>
+	<div id="maindata" data-win-control="WinJS.Binding.Template">
+		<!-- data-win-bind="textContent:" 
+		<div id="MixFeedItem" class="Mixfeed">
+			<div class="BehindTracki">
+				<img class="Tracktileimg" id="Tracktileimg" data-win-bind="src:cover_urls.max200; title:description">
+				</div>
+		<div id="mixname" data-win-bind="textContent:name"></div>
+		</div>
+		-->
+		<div class="mix" style="width: 200px; height: 200px; border-width: 3px; border-color: white;">
+			  <div class="tooltip_container" style="right: 1.47px; left: 0px; top: 0px;">
+			    <div class="grid_details">
+			      <div class="grid_tags tags">
+			        <div id="tagslist" data-win-bind="textContent:tag_list_cache" style="width: 191.53px; height: 86px;"></div>
+			      
+				  </div>
+			
+			      <div class="mix-stats clear" style="left: 0.17px; top: 97px; right: -3.28px; bottom: 10.5px;">
+			       <span class="numbers" style="height: 35px; width: 67.69px;">
+			         <div><b>Likes:</b> <span title="Number of likes" data-win-bind="textContent:likes_count"></span></div>
+			         <div><b>Plays: </b> <span title="Number of plays" data-win-bind="textContent:plays_count"></span></div>
+			        </span>  
+			      </div>
+			
+			    </div>
+			
+			    <div>
+			    <img class="cover" data-win-bind="src:cover_urls.max200; title:description" style="left: 0px; top: 0px; height: 200px; width: 200px; border-width: 4px; border-color: white;">
+			    </div>
+			    <div class="quick_actions" style="width: 148.53px; height: 42px;">
+			      <a class="quick_play"><span class="i-play"></span></a>
+			      <span class="pipe"></span>
+			      <a class="quick_add"><span class="i-plus"></span></a>
+			    </div>
+			  </div>
+			  <div class="text" style="left: -0.29px; font-size:14px; top: 143px; right: 0.48px; bottom: -0.09px;">
+			      <div id="name" style="height: 46.09px;" ><strong class="propername" data-win-bind="textContent:name" style="height: 42px; width: 88.11px;"></strong>
+			      <a class="dj"></a></div>
+			  </div>
+
+			</div>
+	</div>
+    <!-- The content that will be loaded and displayed. -->
+	<div id="flexbox">
+		<div id="flexitem" class="small" style="background:url('/images/timesplash.png') 0 0 #0A0C10; opacity:0.94; width:90%;">
+			<div id="messagecontent" style="position:relative; width: 750.17px; height: 23px; left: 16px; top: 0px; display: none;"><a href="http://www.facebook.com/MetroTracks"><div id="facebookmessage" style="color: white;">sdfdsf sdf sdf sdf sdfsdf sdfsd fs dfsdf</div></a></div>
+			<div id="punchoutTriangle"></div>
+			<div id="tagbox">
+				<div id="MetroTracksTopLogo" style="top:-167px; position:relative; width: 0cm; height: 0px; left: 92px;"><img alt="logobig" src="/images/logobig.png" style="width: 593px; height: 165px; left: 83px; top: -166px;">
+				</div><div id="playmesome" style="margin:auto; top:31px; border-bottom-color: #23437C; border-bottom-width: 1px; margin-left:5%; margin-right:5%; position:absolute;width:90%; text-align:center; left: 1px; top: 24px; border-bottom-width: 1px; border-color: #27457D; border-bottom-style: solid; ">
+					<h2>Play me some <b id="b1">_________</b> + <b id="b2">_________</b></h2>
+					</div>
+				<div style="width: 734.64px; height: 176.5px;">
+				<div id="taggridview" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:select('#TagData'), loadingBehavior:'incremental', layout:{type:WinJS.UI.GridLayout, maxRows:5}, scrollPosition:0, swipeBehavior:'none', tapBehavior:'invokeOnly'}" style="height: 181px; left: 9px; top: 77px;"></div>
+				</div>
+
+				<div id="tagbox" style="height: 62px; left: -2px; top: 38px;">
+					<center><input id="searchbar001" type="search" style="width:80%; height:100%; text-align:center; background-color:transparent; color: white; font-size: 23px;" alt="Search Mixes" placeholder="Search..."> 
+				</center></div>
+				<div id="tagresults" style="overflow-x:hidden !important; position:relative; height: 93.5px; left: 2.5px; top: 51.5px; width: 741px;">
+					<center><div id="searchgridview" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:select('#minimix'), layout:{type:WinJS.UI.GridLayout}, selectionMode:'none', tapBehavior:'directSelect'}" style="height: 93px; left: 4.5px; top: -1.5px; margin: 0px 120px 0px 0px; width: 734.64px;"></div>
+				</center></div>
+
+			</div>
+			
+			
+			
+			</div>
+
+
+			<div id="flexitem" class="large">
+    <div class="fragment homepage" id="playingsectionofpage">
+        <header aria-label="Header content" role="banner" >
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle" id="titleofpage1">HackedTracks</span>
+            	<div data-win-control="WinJS.UI.Flyout"></div>  	
+			
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main" style="margin-top: 0px; margin-right: 0px; margin-bottom: 72px;">
+        	<h2 id="TitlePlay">Now Playing</h2>
+			<div id="nogridview" style="display: -ms-flexbox;opacity:0.9; height: 100%; left: 0px; top: 0px; margin: 0px 120px 0px 0px; -ms-flex-align: end; -ms-flex-flow: column wrap; float: left;">
+				<div id="imgNowPlaying" style="background-size:cover;background-position:center;height:500px;width:500px;box-shadow: inset 0 0 300px #000000; float:left;color:white;">
+					<div id="mixnowplaying" style="position:relative; left: 15.9px; top: 17.5px; z-index:110; width: 468.5px; height: 89px; font-size:15px;"></div>
+					<div style="height: 78.5px; position:relative; left: 10.27px; top: 315.27px;margin:15px; width: 459.5px;">
+						<div id="artistnowplaying" style="height: 36.5px; position:relative; font-size:23px; left: 0px; top: 0px;">
+						<h1><b><div id="artistnowplaying" style="font-size:larger;"></div></b></h1>
+					</div>
+					<div style="height: 50px; position:relative;">
+						<h3><div id="songnowplaying"></div></h3>
+					</div>
+					</div>
+
+
+					<div style="height: 78.5px; position:relative; left: -0.23px; top: 303.27px;margin:15px; width: 459.5px;">
+						<button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'play', id:'npplaypause', label:'Play', onclick:null, section:'global', type:'button'}"></button>
+						<button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'next', id:'npskipsong', label:'Skip Song', onclick:null, section:'global', type:'button'}"></button>
+					    <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'sync', id:'nphacksong', label:'Hack Mix', onclick:null, section:'global', type:'button'}"></button>
+						<button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'redo', id:'npskipmix', label:'Next Mix', onclick:null, section:'global', type:'button'}"></button>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		</div>
+		<!-- END OF Homepage Fragment-->
+		</div>
+
+
+		<div id="flexitem" class="large">
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner" >
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            
+        </header>
+        <section aria-label="Main content" role="main" style="margin-top: 0px; margin-right: 0px; margin-bottom: 72px;">
+        	<h2 id="TitleMain" title="Click to Play Next Mix">Title</h2>
+			<div id="maingridview" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:select('#maindata'), layout:{type:WinJS.UI.GridLayout}, selectionMode:'none', tapBehavior:'directSelect'}" style="height: 100%; left: 0px; top: 0px; margin: 0px 120px 0px 0px;"></div>
+		</section>
+		</div>
+		<!-- END OF Homepage Fragment-->
+		</div>
+
+
+
+		<div id="flexitem" class="large">
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner" >
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle" id="titleofpage1"></span>
+            	<div data-win-control="WinJS.UI.Flyout"></div>  	
+			
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main" style="margin-top: 0px; margin-right: 0px; margin-bottom: 72px;">
+        	<h2 id="TitleSecond">Title</h2>
+			<div id="secondgridview" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:select('#maindata'), layout:{type:WinJS.UI.GridLayout}, selectionMode:'none', tapBehavior:'directSelect'}" style="height: 100%; left: 0px; top: 0px; margin: 0px 120px 0px 0px;"></div>
+		</section>
+		</div>
+		<!-- END OF Homepage Fragment-->
+		</div>
+		<div id="myAd" style="position:relative; float:right; width: 160px; height: 600px; z-index: 100; margin-right:20px; margin-top: 160px; -ms-grid-column-span: 1; -ms-grid-column: 2;" 
+        data-win-control="MicrosoftNSJS.Advertising.AdControl" 
+     data-win-options="{applicationId: '0cdfa5ce-a006-4a00-97e4-bbdf74624340', adUnitId: '121846'}">
+	</div>
+		<div id="flexitem" class="large">
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner" >
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle" id="titleofpage1"></span>
+            	<div data-win-control="WinJS.UI.Flyout"></div>  	
+			
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main" style="margin-top: 0px; margin-right: 0px; margin-bottom: 72px;">
+        	<h2 id="TitleThird"></h2>
+			<div id="thirdgridview" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:select('#maindata'), layout:{type:WinJS.UI.GridLayout}, selectionMode:'none', tapBehavior:'directSelect'}" style="height: 100%; left: 0px; top: 0px; margin: 0px 120px 0px 0px;"></div>
+		</section>
+		</div>
+		<!-- END OF Homepage Fragment-->
+		</div>
+		<div style="position:static; margin-top:30px;background-color:black;opacity:0.8;height:100%; -ms-grid-row-span: 2; left: 0px; top: 0px;">
+			<textarea id="myTextArea" style="width: 260px; height: 144px;"></textarea>
+			<div id="currentSongDIV"></div>
+		</div>
+
+		<section class="play" id="playtab">
+			<audio id="musicplayr" msAudioCategory="BackgroundCapableMedia" controls="" style="width: 515px;"><source src=""/> </audio>
+			<input id="url" type="text">
+			<button id="search1" type="button">Search</button>
+			<button id="nextTrack" type="button">Next Track</button>
+			<button id="btnpause" type="button">Pause</button>
+			<button id="alert1" type="button">button</button>
+			<button id="alert2" type="button" style="width: 90px; height: 32px;">button</button>
+		</section>
+
+
+		<!--
+		<div id="flexitem" class="small" style="background-color:blue;">Flexbox Example Text</div>
+		  This is the end of the flexbox property--></div>
+	<div data-win-control="WinJS.UI.AppBar">
+		<button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'play', id:'appbarplaypause', label:'Play', onclick:null, section:'global', type:'button'}"></button>
+		<button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'next', id:'appbarskip', label:'Skip Track', onclick:null, section:'global', type:'button'}"></button>
+		<button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'redo', id:'appbarmix', label:'Next Mix', onclick:null, section:'global', type:'button'}"></button>
+		<button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'heart', id:'appbarlike', label:'Like Mix', onclick:null, section:'global', type:'button'}"></button>
+	<button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'emoji', id:'facebooklike', label:'Like on Facebook', onclick:null, section:'global', type:'button'}"></button>
+	</div>
+</body>
+</html>

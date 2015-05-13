@@ -1,0 +1,95 @@
+﻿.homepage section[role=main] {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+section[role=menubar] {
+	background-image: url('/skin.png'), linear-gradient(90deg, #090909 72%, #121212);
+	box-shadow: 7px 0px 29px #000000;
+	height:100%;
+	width:90px;
+	position:fixed;
+}
+section[role=playbar] {
+	bottom:0px;
+	left:90px;
+	height:210px;
+	width:100%;
+	position:fixed;
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.808) 26%, transparent 100%);
+	
+}
+body {
+	background-color:#688297;	
+}
+#sidebarLogo{
+	height:64px;
+	top: 100%;
+	background-image: url('/smallLogo.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-top: 43px;	
+}
+#MainButtonSet{
+	margin-top: 100%;	
+}
+#SecondaryButtonSet{
+	margin-top: 100%;
+}
+#SidebarMixButtonSet{
+	position: absolute;
+    bottom: 2%;
+}
+/*SideBar Button*/
+.SidebarButton{
+	height: 85px;
+	background-repeat: no-repeat;
+	background-position: center top 40%;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 143px;
+	margin-bottom: 8px;
+}
+.SidebarButton img{
+	position: relative;
+	top: -15px;
+}
+.SidebarButton div{
+	top: -145px;
+	position: relative;
+	z-index:100;
+	height:80px;
+	font-family:'segoe wp semilight';
+	font-size: 15px;
+}
+.SidebarButton:hover{background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.004), rgba(8, 126, 160, 0.204));}
+/**/
+#record{
+	float:left;
+	width:310px;
+	height:100%;
+}
+#playControls{
+	float:left;
+	width:400px;
+	height:100%;
+	}
+
+	/*PlayControls Text*/
+.text{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}	
+#MixName{font-size:36px;font-weight:700;}
+#SongArtist{font-size:25px;font-weight:700;color:#D9D9D9;}
+#SongName{font-size:19px;font-weight:500;color:#7d7b7a;}
+
+@media screen and (-ms-view-state: snapped) {
+    .homepage section[role=main] {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .homepage section[role=main] {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}

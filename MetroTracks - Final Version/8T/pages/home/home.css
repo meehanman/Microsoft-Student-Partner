@@ -1,0 +1,217 @@
+﻿.homepage section[role=main] {
+    margin-left: 120px;
+}
+.errormessage{
+	width: 500px;
+	height:80%;
+	color:white;
+	margin-left: auto ;
+	margin-right: auto ;
+	padding-top:10%;
+	text-align:center;
+	font-size: 30px;
+}
+/*  <div style=""></div>  */
+#flexbox{
+ display: -ms-flexbox;
+-ms-flex-align: stretch;
+-ms-flex-pack: start;
+-ms-flex-direction: row;
+overflow-y: hidden !important;
+overflow-x: scroll !important;
+width:100%;
+height:100%;
+}
+#flexitem{
+	-ms-flex: 0 auto;
+	height: 100%;
+	visibility: inherit;
+	}
+#playmesome{
+	width:50px;
+}
+.small{
+	width:1000px;
+	}
+.large{
+	}
+
+
+#punchoutTriangle{
+	z-index:-100;
+	position:relative;
+	width: 0px; 
+	height: 0px; 
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-left: 15px solid #1B222E;
+	left: 100%;
+	top: 48%;
+}
+#tagbox{
+	position:relative;
+	width:750px;
+	height:300px;
+	margin-left: auto ;
+	margin-right: auto ;
+	margin-top:15%;
+	background-color:#0C182C;
+	box-shadow: inset 0 0 10px #000000;
+}
+.selectedtag{
+	box-shadow: inset 0 0 7px #1E3C70; 
+	border-radius:5px;
+	float:right;
+	margin-left:5px;
+	padding-left:5px;
+	margin-right:5px;
+	padding-right:5px;
+	position:relative;
+	}
+
+
+
+
+
+
+
+body{
+	background-image: url('/images/Party_Fuel-3112.jpg');
+	background-size:cover;
+	background-position:center;
+	transition:bod 2s linear;
+	box-shadow: inset 100px 100px 500px 100px #000000;
+	filter: blur(1000px);
+}
+@keyframes bod
+{
+0%   {background: red;}
+25%  {background: yellow;}
+50%  {background: blue;}
+100% {background: green;}
+}
+#imgbg{
+	position:absolute;
+	width:100%;
+	height:100%;
+	opacity:1;
+	background-size:cover;
+	background-position:center;
+	transition:bod 2s linear;
+	z-index:-500;
+	box-shadow: inset 100px 100px 500px 25px #000000;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, .7); 
+	}
+#imgcolor{
+	position:absolute;
+	width:100%;
+	height:100%;
+	opacity:.8;
+	background-color:black;
+	z-index:-400;
+	}
+.text{
+	position:absolute;
+	background-color:black;
+	opacity:.6;
+	padding:5px;
+}
+.name{
+	opacity:1;
+	position:absolute;
+}
+#tagslist{
+	overflow-x:hidden;
+	text-overflow:clip;
+	font-size:13px;
+	padding:5px
+	}
+.tooltip_container{
+	height:75%;
+	position:absolute;
+	background-color: #19385C;
+}
+#myAd{
+	display:inherit;
+}
+.mix-stats{
+	position:absolute;
+	background-color: #2E4E74;
+	padding-left:3px;
+	}
+.mix .cover{
+	position:absolute;
+	opacity:1;
+}
+.mix:hover .cover{
+	animation: myanim 50s ;
+}
+@keyframes myanim{
+	0% { top:0px;}
+	.25% { top:-200px;}
+	100%{top:-400px;}
+}
+.play{
+	position: absolute; 
+	bottom: 0px; 
+	left: 0px; 
+	width: 100%;
+	height:10%; 
+	color: #fff; 
+	background: #000;
+	opacity: 0.7;
+	padding-left:120px;
+	visibility: hidden;
+}
+#snapedview{
+	display:none;
+	}
+	#snaplogo{
+			display:none;
+		}
+@media screen and (-ms-view-state: snapped) {
+    .homepage section[role=main] {
+       display:none;
+    }
+	#myAd{
+		display:none;
+		}
+	.play{
+		display:none;
+		}
+		#flexitem{
+			display:none;
+			
+		}
+		#snapedview{
+			z-index:500;
+			width:100%;
+			height:50%;
+			margin-bottom:0;
+			position: absolute; 
+			bottom: 0px;
+			display:block;
+		}
+		#logobig{
+			display:block;
+		}
+		#snaplogo{
+			display:block;
+		}
+		.errormessage{
+	width: 95%;
+	height:80%;
+	color:white;
+	margin-left: auto ;
+	margin-right: auto ;
+	padding-top:50%;
+	text-align:center;
+	font-size: 20px;
+}
+}
+
+@media screen and (-ms-view-state: portrait) {
+    .homepage section[role=main] {
+        margin-left: 100px;
+    }
+}

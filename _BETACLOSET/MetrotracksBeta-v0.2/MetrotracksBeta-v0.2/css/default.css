@@ -1,0 +1,209 @@
+﻿#svg-image-blur {
+	position: fixed; 
+	top: -50%; 
+	left: -50%; 
+	width: 200%; 
+	height: 200%;
+}
+#Buttons button{
+	margin: 0px -10px 0px -10px;
+	}
+#Buttons button:first-of-type{margin-left:-30px;}
+
+#backgroundimage { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 25%;
+  min-height: 25%;
+  filter:url(#blur-effect-1);
+}	
+.fragment {
+    /* Define a grid with rows for a banner and a body */
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 128px 1fr;
+    display: -ms-grid;
+    height: 100%;
+    width: 100%;
+}
+#background{
+	height: 100%;
+    width: 100%;
+	position:absolute;
+	z-index:-100;
+	}
+#blueOverlay{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-image: linear-gradient(rgba(36, 44, 54, 0.847), rgba(32, 39, 48, 0.847));
+	z-index:-100;
+}
+    .fragment header[role=banner] {
+        /* Define a grid with columns for the back button and page title. */
+        -ms-grid-columns: 39px 81px 1fr;
+        -ms-grid-rows: 128px;
+        display: -ms-grid;
+    }
+
+        .fragment header[role=banner] .win-backbutton {
+            -ms-grid-column: 2;
+            margin-top: 59px;
+        }
+
+        .fragment header[role=banner] .titlearea {
+            -ms-grid-column: 3;
+            margin-top: 37px;
+        }
+
+            .fragment header[role=banner] .titlearea .pagetitle {
+                width: calc(100% - 20px);
+            }
+
+    .fragment section[role=main] {
+        -ms-grid-row: 2;
+        height: 100%;
+        width: 100%;
+    }
+	
+.homepage section[role=main] {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+section[role=login] {
+	position:absolute;
+	width:25%;
+	height:100px;
+	float:right;
+	display:block;
+	right:0px;
+}
+section[role=menubar] {
+	background-image: url('/assets/skin.png'), linear-gradient(90deg, #090909 72%, #121212);
+	box-shadow: 7px 0px 29px #000000;
+	height:100%;
+	width:90px;
+	position:fixed;
+	z-index:5;
+}
+section[role=playbar] {
+	bottom:0px;
+	left:90px;
+	height:210px;
+	width:100%;
+	position:fixed;	
+}
+#sidebarLogo{
+	height:64px;
+	top: 100%;
+	background-image: url('/assets/smallLogo.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-top: 43px;	
+}
+#MainButtonSet{
+	margin-top: 100%;	
+}
+#SecondaryButtonSet{
+	margin-top: 100%;
+}
+#SidebarMixButtonSet{
+	position: absolute;
+    bottom: 2%;
+}
+/*SideBar Button*/
+.SidebarButton{
+	height: 85px;
+	background-repeat: no-repeat;
+	background-position: center top 40%;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 143px;
+	margin-bottom: 8px;
+}
+.SidebarButton img{
+	position: relative;
+	top: -15px;
+}
+.SidebarButton div{
+	top: -145px;
+	position: relative;
+	z-index:100;
+	height:80px;
+	font-family:'segoe wp semilight';
+	font-size: 15px;
+}
+.SidebarButton:hover{background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.004), rgba(8, 126, 160, 0.204));}
+.ActiveOption{background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.004), rgba(8, 126, 160, 0.204));}
+#record{
+	float:left;
+	width:310px;
+	height:100%;
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.204) 26%, transparent 100%);
+}
+#recorddiv{
+    border-radius: 200px;
+    border:solid 100px #101010; 
+    width:150px;
+    height:150px;
+	position:absolute;
+	left: -90px;
+	top: -62.5px;
+	z-index:1;
+}
+#recordTrack{
+	width:160px;
+	height:160px;
+	position:absolute;
+	z-index:-10; left: 5px; top: 32.5px;
+}
+#playControls{
+	float:left;
+	width:400px;
+	height:100%;
+	padding-left:25px;
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.204) 26%, transparent 100%);
+	}
+
+	/*PlayControls Text*/
+.text{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}	
+#MixName{font-size:36px;font-weight:700;}
+#SongArtist{font-size:25px;font-weight:700;color:#D9D9D9;}
+#SongName{font-size:19px;font-weight:500;color:#7d7b7a;}
+
+/*Profile Options*/
+#profilePIC{
+	width:72px;
+	height:72px;
+	right:0px;
+	bottom:0px;
+	margin-right:40px;
+	margin-top:28px;
+	float:right;
+}
+#loginText div{
+	float:right;
+	margin:10px 10px 10px 10px;
+	margin-top:70px;
+	font-size: 15pt;
+	}
+#loginText div:not(#seperate):hover{
+	background-color:#FFF;
+	color:#000;
+}
+@media screen and (-ms-view-state: snapped) {
+    .homepage section[role=main] {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .homepage section[role=main] {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}

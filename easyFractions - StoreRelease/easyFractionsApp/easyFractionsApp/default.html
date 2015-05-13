@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>easyFractionsApp</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- easyFractionsApp references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <!-- The content that will be loaded and displayed. -->
+    <div id="animatethis" class="fragment homepage">
+        <header aria-label="Header content" id="banner" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle"><img id="logo" src="/4040easyfralogo.png">&#32;easyFractions</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main" style="margin-top: 0px; margin-right: 86px; margin-bottom: 0px;">
+			<div id="error1"></div>
+			<div id="toptext">Just enter your fraction in here</div>
+			<div id="intro">
+				<div id="on1">
+					
+					<div id="input"><center>
+				<input id="fratop" type="number" class="fra" style="font-size:40px; color:#dd7400; text-align:center; "><br>
+				<div id="rec1"></div>
+				<input id="frabot" type="number" class="fra" value="" style="font-size:40px; color:#dd7400; text-align:center; ">
+				</center>
+				</div>
+
+				</div>
+				<div id="tw2">
+					
+					<div id="output">
+				<button id="btneq" type="button" style="width: 59.48%; height: 250.42px;">Click Me!</button>
+				<!--<button id="clearButton" style="width: 177.69px; height: 32px;">Say "Clear"</button>
+				--></div>
+
+				</div>
+				<div id="th3">
+				<div class="pieContainer" id="pieContainer" style="width: 369px; ">
+					<div class="pieBackground" id="piechart002"></div>
+					<div id="pieSlice1" class="ahold"><div id="piechart001" class="pie"></div></div>
+					<div id="simplefraction" class="simpleclass"></div>
+					<div id="simplefractiontext" class="simpleclass" style="text-align:center; float:left; width:90.51%; font-size:60px;margin-top:30px;">
+						three fifths
+					</div>
+					</div>
+					<!--<input id="fraans" type="number">-->
+					
+				</div>
+           
+        </div>
+		<br><div id="Top" class="hold">
+			<!--<a class="box"></a><a class="box"></a><a class="box"></a>-->
+			<div id="bottom" class="hold">
+		</div>
+		<br><br>
+            <div id="rawcalc"></div>
+			
+		</div>
+        </section>
+    </div>
+</body>
+</html>

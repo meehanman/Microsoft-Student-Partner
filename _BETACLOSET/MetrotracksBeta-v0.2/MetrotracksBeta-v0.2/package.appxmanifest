@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="65456roozo.AsianTop40" Version="1.1.0.0" Publisher="CN=C92EC9F5-75BA-4F99-BD8B-9E56643E62B9" />
+  <Properties>
+    <DisplayName>Asian Top 40</DisplayName>
+    <PublisherDisplayName>roozo</PublisherDisplayName>
+    <Logo>images\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <m2:VisualElements DisplayName="Metrotracks Beta" Description="Metrotracks" ForegroundText="light" BackgroundColor="#04aeda" Square150x150Logo="images\Logo.png" Square30x30Logo="images\Square30x30Logo.png">
+        <m2:DefaultTile ShortName="Metrotracks 0.2" Wide310x150Logo="images\Wide310x150Logo.png" DefaultSize="wide310x150Logo">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+            <m2:ShowOn Tile="wide310x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="images\splashscreen.png" />
+        <m2:ApplicationView MinWidth="width320" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

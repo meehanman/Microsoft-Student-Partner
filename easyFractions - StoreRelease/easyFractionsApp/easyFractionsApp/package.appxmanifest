@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="65456roozo.easyFractions" Version="1.0.3.6" Publisher="CN=C92EC9F5-75BA-4F99-BD8B-9E56643E62B9" />
+  <Properties>
+    <DisplayName>easyFractions</DisplayName>
+    <PublisherDisplayName>roozo</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="easyFractions" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="easyFractions Application" ForegroundText="light" BackgroundColor="#464646" ToastCapable="true">
+        <DefaultTile ShowName="logoOnly" WideLogo="images\logowide.png" ShortName="easyFractions" />
+        <SplashScreen Image="images\orangetheme\splashscreen-Recovered.png" BackgroundColor="#f38000" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+</Package>

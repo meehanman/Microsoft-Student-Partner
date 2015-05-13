@@ -1,0 +1,54 @@
+﻿.homepage section[role=main] {
+    margin-left: 120px;
+}
+
+#gridlistcontent1 {
+	height:94.61%;
+	width: 93.66%;
+	margin: 0px;
+	left: -9px;
+	top: 6.14px;
+}
+.ContentHolder{ position:relative;}
+.EntryClass {
+	width: 395px;
+	height: 149px;
+	display: -ms-grid;
+	-ms-grid-columns: 155px 1fr;
+	-ms-grid-rows: 1fr 190px;
+	background-color: #073B52;
+	background-image: radial-gradient(at left bottom, rgb(0, 138, 255) 40.4%, rgb(7, 38, 61) 100%);
+	margin:2px 5px 5px;
+	color-interpolation-filters: inherit;
+	border:10px;
+	border-color:white;
+}
+
+.no {
+	font-family:'segoe wp';
+	font-size:60px;
+	margin: 80px 10px 110px 60px; 
+	-ms-grid-row-span: 2; 
+	-ms-grid-column-span: 1; 
+	-ms-grid-column: 2; 
+	-ms-grid-row: 1; 
+	text-align:right; 
+}
+#img{-ms-grid-row-span: 2; margin: 0px; width: 150px; height: 150px; -ms-grid-row: 1; -ms-grid-column-span: 1;}
+#song{margin: 13px 0px 60px; -ms-grid-column-span: 1; -ms-grid-row-span: 1; -ms-grid-row: 2; -ms-grid-column: 2; width: 225px;}
+.progressbar1{
+	margin:30px;
+	visibility:hidden;
+}
+@media screen and (-ms-view-state: snapped) {
+    .homepage section[role=main] {
+        margin-left: 20px;
+    }
+
+}
+
+@media screen and (-ms-view-state: portrait) {
+    .homepage section[role=main] {
+        margin-left: 100px;
+    }
+}

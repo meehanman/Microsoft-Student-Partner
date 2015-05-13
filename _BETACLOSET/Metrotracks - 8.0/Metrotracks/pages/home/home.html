@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>homePage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/pages/home/home.js"></script>
+</head>
+<body>
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Metrotracks</span>
+            </h1>
+        </header>
+		<section aria-label="Side Bar" role="menubar">
+			<div id="sidebarLogo"></div><!--Logo for Sidebar-->
+			<div id="MainButtonSet"><!--Holds all the Main Buttons Set 1-->
+			<div id="Trend" class="SidebarButton"><img src="/TrendingIcon.png"/><div>Trending</div></div>
+			<div id="Hot" class="SidebarButton"><img src="/HotIcon.png"/><div>Hot</div></div>
+			<div id="New" class="SidebarButton"><img src="/NewIcon.png"/><div>New</div></div>
+			</div>
+
+		</section>
+        <section aria-label="Main content" role="main">
+            <p></p>
+        </section>
+    </div>
+	
+</body>
+</html>

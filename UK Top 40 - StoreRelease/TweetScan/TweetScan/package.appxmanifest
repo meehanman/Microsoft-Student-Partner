@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="65456roozo.UKTop40" Version="1.0.2.8" Publisher="CN=C92EC9F5-75BA-4F99-BD8B-9E56643E62B9" />
+  <Properties>
+    <DisplayName>UK Top 40</DisplayName>
+    <PublisherDisplayName>roozo</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="UK Top 40" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="UK Top 40 direct to your Windows 8 PC, Tablet and Mobile (Coming soon!) Updated every sunday with the greatest and latest and you can also listen online with youtube player!" ForegroundText="light" BackgroundColor="#0072bb">
+        <DefaultTile ShowName="logoOnly" ShortName="UK Top 40" WideLogo="largeicon.png" />
+        <SplashScreen Image="images\splashscreen.png" BackgroundColor="#0072bb" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

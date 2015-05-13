@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>homePage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/pages/home/home.js"></script>
+	<link href="../../css/Microsoft.VisualStudio.Blend.Html.Intrinsic.Grid.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript">WinJS.UI.processAll();</script>
+</head>
+<body>
+	<div id="maindata" data-win-control="WinJS.Binding.Template">
+		<div id="MixFeedItem" class="Mixfeed" style="width: 201px;">
+				<div class="MixFeedInfo" style="position:absolute; left: 6px; top: 4.93px;">
+				<div data-win-bind="textContent:tag_list_cache"></div>
+				<div style="float:left;" data-win-bind="textContent:plays_count"></div>
+				</div>
+			<img class="Tracktileimg" id="Tracktileimg" data-win-bind="src:cover_urls.max200">
+			<h3 id="name" data-win-bind="textContent:name"></h3>
+			<img class="userimg" data-win-bind="src:user.avatar_urls.sq56">
+	
+		</div>
+	</div>
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Windows 8 Tracks</span>
+            	<div id="userlogin" class="userInfo" style="top: 17px; right: 24.36px;">
+            		<a style="color:white;">User1</a>
+            		<img  style="height: 76px; width: 74px;" src="http://imgix.8tracks.com/avatars/001/071/521/89801.original.png?fm=jpg&amp;q=65&amp;sharp=15&amp;vib=10&amp;w=100&amp;h=100&amp;fit=crop">
+				</div>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+			<div id="mainNav">
+				<button class="navItem" id="NAVmixfeed">Mixfeed</button>
+				<button class="navItem" id="new">>New</button>
+				<button class="navItem" id="search">Search Tags</button>
+				<button class="navItem" id="genre">Search Genre</button>
+				<button class="navItem" id="mixfeed">History</button>	
+				<button class="navItem" id="mixfeed">Logout</button>	
+				
+			</div>
+        	<div id="maingridview" data-win-control="WinJS.UI.ListView" data-win-options="{itemTemplate:select('#maindata'), layout:{type:WinJS.UI.GridLayout}, selectionMode:'none', tapBehavior:'directSelect'}"></div>
+		
+		</section>
+    </div>
+</body>
+</html>
